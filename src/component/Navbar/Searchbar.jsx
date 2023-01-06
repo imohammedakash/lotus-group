@@ -8,7 +8,7 @@ const Searchbar = () => {
     const dispatch = useDispatch();
     return (
         <div className=' flex items-center justify-center h-16 bg-white w-full border-b-1px border-solid border-b-f1f1f1 md:h-auto'>
-            <div className='flex justify-start items-center w-3/4 gap-5 md:w-full md:flex-col md:pt-3 '>
+            <div className='flex justify-start items-center w-3/4 gap-5 md:w-full md:flex-col md:py-2 '>
                 <div className='flex justify-center items-center gap-3'>
 
                     <div className='flex items-center justify-between gap-3'>
