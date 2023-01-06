@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { useDispatch } from 'react-redux'
 import { explores } from "../../store/exploreSlice"
 import TopExploreItem from './TopExploreItem'
@@ -15,7 +14,7 @@ const ExploreNav = () => {
   const dispatch = useDispatch()
   return (
     <div className=' fixed h-full w-full bg-0000003d z-60' onClick={() => { dispatch(explores(false)) }}>
-      <div className='h-full w-1/6 bg-white overflow-auto'>
+      <div className='h-full w-1/6 bg-white overflow-auto md:w-1/2'>
         <div>
           <TopExploreItem title="Subscribe" link="/subscribe" Icon={SlBadge} />
           <TopExploreItem title="My Reads" link="/my-reads" Icon={CiStar} />

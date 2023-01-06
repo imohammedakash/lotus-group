@@ -58,7 +58,19 @@ module.exports = {
       },
       minHeight: {
         '293': '293px'
-      }
+      },
+      screens: {
+        md: { 'max': "768px" },
+        mobileLg: "425px",
+        tablet: "768px",
+        laptopSm: "800px",
+        iPadAir: "820px",
+        laptopMd: "1024px",
+        laptopLg: "1280px",
+        desktopSm: "1366px",
+        desktopMd: "1440px",
+        desktopLg: "1920px",
+      },
 
     },
   },

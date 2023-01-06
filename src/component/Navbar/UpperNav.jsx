@@ -9,8 +9,8 @@ const UpperNav = () => {
     const dispatch = useDispatch();
     const showSearch = useSelector((state) => state.search.showSearch);
     return (
-        <div className='w-full px-56 py-0 border-b-1px border-d0d0d05e border-solid box-border'>
-            <div className=" h-16 w-full flex items-center justify-between">
+        <div className='w-full md:px-3  py-0 border-b-1px border-d0d0d05e border-solid box-border flex items-center justify-center'>
+            <div className=" h-16 w-3/4 flex items-center justify-between md:w-full">
                 <div className="flex items-center w-24 px-1 py-1 justify-center gap-1 rounded-sm font-bold text-sm outline-none         cursor-pointer bg-none border-solid border-1px border-gray-600 " onClick={() => { dispatch(explores(true)) }} >
                     <BsTextRight className='w-5 h-5' />
                     Explore
@@ -20,9 +20,9 @@ const UpperNav = () => {
                 </div>
                 <div className="flex items-center justify-between gap-5">
                     <BiSearchAlt2 className=' text-2xl text-474747 cursor-pointer' onClick={() => { dispatch(search(!showSearch)) }} />
-                    <MdOutlineNotifications className=' text-2xl text-474747 cursor-pointer' />
-                    <div className=" font-bold px-5 py-1 font-Lato text-base border-l-1px border-solid border-909090">e-paper</div>
-                    <div className=" font-bold px-5 py-1 font-Lato text-base border-l-1px border-solid border-909090 ">Sign in</div>
+                    <MdOutlineNotifications className=' text-2xl text-474747 cursor-pointer md:hidden' />
+                    <div className=" font-bold px-5 md:pl-3 md:px-0 py-1 font-Lato text-base border-l-1px border-solid border-909090 whitespace-nowrap">e-paper</div>
+                    <div className=" font-bold px-5 py-1 font-Lato text-base border-l-1px border-solid border-909090 md:hidden whitespace-nowrap ">Sign in</div>
                 </div>
 
             </div>

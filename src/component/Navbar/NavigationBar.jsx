@@ -3,8 +3,8 @@ import NavItems from './NavItems'
 const NavigationBar = () => {
 
     return (
-        <div className='w-full py-1 px-56 box-border'>
-            <ul className="flex items-center justify-between w-full h-12">
+        <div className=' w-3/4 py-1 md:px-2 box-border md:w-full'>
+            <ul className="flex items-center justify-between w-full h-12 md:overflow-auto md:gap-4  ">
              <NavItems title="Home" link='/' />
              <NavItems title="Latest" link='/latest' />
              <NavItems title="News" link='/news' />

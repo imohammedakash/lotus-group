@@ -39,7 +39,6 @@ export const StorieData = [
                 title: "Be Alone",
                 featureImage: "https://images.livemint.com/img/2023/01/01/900x1600/ANI-20220201035-0_1643709477318_1672556090894_1672556090894.jpg",
                 logo: "https://images.livemint.com/icons/mintfavi.svg",
-                logo: "https://images.livemint.com/icons/mintfavi.svg",
 
             },
 

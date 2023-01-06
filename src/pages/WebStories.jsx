@@ -11,13 +11,13 @@ const WebStories = () => {
         <div className='w-full'>
             <AddComponent />
             <Navbar />
-            <div className='w-full flex gap-5 mt-5'>
-                <div className='flex-1 flex bg-white'>
+            <div className='w-full flex gap-5 mt-5 md:gap-0 md:mt-1'>
+                <div className='flex-1 flex bg-white md:hidden'>
                     <LeftSidebar />
                 </div>
                 <div className='w-full flex justify-center flex-col  flex-1'>
                     <Heading title="Web Stories" />
-                    <div className='relative w-550 p-5 pb-0 box-border flex flex-wrap bg-white justify-between gap-5 '>
+                    <div className='relative w-550 p-5 pb-0 box-border flex flex-wrap bg-white justify-between gap-5 md:w-full md:justify-center '>
                         {
                             StorieData.map((i) => (
                                 <FeatureStorie title={i.title} image={i.featureImage} date={i.date} logo={i.logo} length={i.storieImages.length} storieImages={i.storieImages} />
@@ -25,7 +25,7 @@ const WebStories = () => {
                         }
                     </div>
                 </div>
-                <div className='flex-1 bg-white'>
+                <div className='flex-1 bg-white md:hidden'>
                     <RightSidebar />
                 </div>
             </div>
